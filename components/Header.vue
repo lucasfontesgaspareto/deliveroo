@@ -1,0 +1,16 @@
+<template>
+  <b-navbar
+    variant="light"
+    type="light"
+  >
+    <b-container>
+      <b-navbar-brand
+        tag="a"
+        to="/"
+        exact
+      >
+        Deliveroo
+      </b-navbar-brand>
+    </b-container>
+  </b-navbar>
+</template>
