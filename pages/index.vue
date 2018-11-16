@@ -82,7 +82,7 @@ export default {
           `
       }
     })
-    response.data.restaurants.forEach(restaurant => {
+    (response.data.restaurants || []).forEach(restaurant => {
       restaurant.image.url = `${apiUrl}${restaurant.image.url}`
       store.commit('restaurants/add', {
         id: restaurant.id || restaurant._id,
